@@ -1,0 +1,3 @@
+[submodule "PID_Bowler"]
+	path = PID_Bowler
+	url = git@github.com:WPIRoboticsEngineering/PID_Bowler.git
