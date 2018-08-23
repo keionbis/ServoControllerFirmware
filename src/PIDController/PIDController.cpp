@@ -35,6 +35,10 @@ float PIDimp::getPosition( )
 
 	return runningTotal/SENSOR_SUM;
 }
+float PIDimp::getTorque( )
+{
+	return (currentSense.read()*CurrentToTorqueConst);
+}
 
 
 //Send controller signel to the motors, bounded and scaled by the configurations

@@ -29,6 +29,7 @@ class PIDimp : public PIDBowler
 
   // Functions inherited from PIDBowler
   float getPosition();
+  float getTorque();
   void setOutputLocal(float);
   float resetPosition(float);
   void onPidConfigureLocal();
@@ -50,6 +51,7 @@ class PIDimp : public PIDBowler
   float runningValues[(int)SENSOR_SUM];
   float runningTotal;
   int runningTotalIndex;
+  float CurrentToTorqueConst = 1;
 };
 
 #endif
